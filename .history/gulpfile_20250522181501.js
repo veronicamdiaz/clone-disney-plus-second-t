@@ -10,12 +10,12 @@ function styles() {
 
 function images() {
     return gulp.src('./src/images/**/*')
-    .pipe(imagemin())
+    .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(gulp.dest('./dist/images'));
 }
 
 
-exports.default = gulp.parallel(styles, images);
+exports.default = styles;
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
 }
