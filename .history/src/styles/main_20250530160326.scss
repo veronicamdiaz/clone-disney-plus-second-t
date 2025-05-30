@@ -40,18 +40,10 @@ body {
 
 .text--big {
     @include text(18px);
-
-    @media (max-width: 768px) {
-        @include text(15px);
-    }
 }
 
 .text {
     @include text;
-
-    @media (max-width: 768px) {
-        @include text(14px);
-    }
 }
 
 .text--small {
