@@ -5,7 +5,7 @@
     min-height: 80vh;
     background-image: url(../images/hero_desktop.jpeg);
     text-align: center;
-    background-size: cover;
+    background-color: cover;
 
     @media (max-width: 768px) {
         background-image: url(../images/hero_celular.jpeg);
@@ -15,10 +15,25 @@
         margin-top: -55px;
     }
 
+
+    .button  {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+    background-image: url(../images/hero_celular.jpeg);
+    padding-top: calc(50vw + 25px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -55px;
+}
+
     .button {
         margin-top: 2vw;
         margin-bottom: 8px;
     }
+
 
     &__content {
         max-width: 640px;
@@ -48,6 +63,7 @@
             display: flex;
             justify-content: space-between;
 
+            
             @media (max-width: 768px) {
                 display: block;
             }
